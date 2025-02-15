@@ -1,0 +1,49 @@
+{%extends 'base.html'%}
+{% block content %}
+<div>
+<section class=" container-flex custom-bg my-5 py-5">
+<div class=" container">
+
+    <h1 class="text-center text-success">About</h1>
+    <p>In this example, the bg-primary class sets the background color to Bootstrap's primary color, and the text-white class ensures that the text color is white for better contrast.
+
+        You can replace bg-primary with any other Bootstrap background color class to achieve the desired effect. Here are some examples:
+        
+        bg-primary: Sets the background color to the primary color.
+        bg-secondary: Sets the background color to the secondary color.
+        bg-success: Sets the background color to the success color.
+        bg-danger: Sets the background color to the danger color.
+        bg-warning: Sets the background color to the warning color.
+        bg-info: Sets the background color to the info color.
+        bg-light: Sets the background color to a light gray color.
+        bg-dark: Sets the background color to a dark gray color.
+        bg-white: Sets the background color to white.
+        If you want to use a custom background color, you can add a custom CSS class to your stylesheet and apply it to the section. Here's an example:</p>
+</div>
+</section>
+
+
+<section class="container-flex custom-bg2 my-5 py-5" id="about">
+    <h1 class="text-center text-danger">Projects</h1>
+    {%if object_list%}
+    <div class="container">
+    <div class="row row-cols-1 row-cols-3 g-4 justify-content-start">
+        {%for project in object_list%}
+        <div class="col">
+            <div class="card h-100">
+              <img src="{{project.project_img.urls}}" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">{{project.project_name}}</h5>
+                <p class="card-text">{{project.project_summary}}</p>
+                
+              </div>
+            </div>
+          </div>
+          {%endfor%}
+        </div>
+        
+    </div>
+    {%endif%}
+</section>
+</div>
+{% endblock %}
