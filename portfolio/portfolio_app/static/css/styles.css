@@ -183,3 +183,7 @@
 .card-text {
     margin-top: 1rem; /* Push the text to the bottom */
 }
+h1.about-heading, h1.projects-heading {
+    font-family: 'Roboto', sans-serif;
+	font-weight: 700;
+}

@@ -10,7 +10,7 @@ class ProjectDetails(models.Model):
     project_description=models.TextField(max_length=10000) #this goes in the detail view
     project_summary=models.CharField(max_length=300) #this goes in the main page
     project_img=models.ImageField(blank=True,null=True,upload_to='project_images/',default='project_images/default.webp')
-    
+    #resume=models.FileField(blank=True,null=True,upload_to='project_images/')
     #add a way to sort them by assigning a priority to each item
     priority=models.PositiveSmallIntegerField(blank=True,null=True)
 

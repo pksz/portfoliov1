@@ -4,22 +4,22 @@
 <section class=" container-flex custom-bg my-5 py-5" id="about">
 <div class=" container" >
 
-    <h1 class="text-center text-success" >About</h1>
+    <h1 class="text-center text-success about-heading" >About</h1>
     <p class="lato-regular">
-      Hey there! I'm Pankaj, a recent postgraduate in XYZ with a passion for building cool stuff with Python. While Python is my go-to language, I've dabbled in a few others along the way as i am always open to learning new things!
+      Hey there! I'm a recent MCA postgraduate  with a passion for building cool stuff with Python. While Python is my go-to language, I've dabbled in a few others along the way as i am always open to learning new things!
       <br>
-      I've spent a lot of time working on web apps, APIs, and interactive tools, mostly using Django and Django REST Framework. Whether it’s setting up authentication, handling databases, or making things run smoothly behind the scenes, I love figuring out how everything connects.
+      I've spent time working on web apps, APIs, and interactive tools, mostly using Django and Django REST Framework. Whether it's setting up authentication, handling databases, or making things run smoothly behind the scenes, I love figuring out how everything connects.
       <br>
-      Right now, I'm on the lookout for an internship or job opportunity where I can keep learning, contribute to real-world projects, and grow as a developer. If you're working on something exciting, feel free to reach out!
+      I'm  always on the lookout for an opportunity where I can keep learning, contribute to real-world projects, and grow as a developer. If you're working on something exciting, feel free to reach out!
     </p>
 </div>
 </section>
 
 
-<section class="container-flex custom-bg2 my-5 py-5" >
-    <h1 class="text-center text-danger ">Projects</h1>
+<section class="container-flex custom-bg2  py-5" >
+    <h1 class="text-center text-danger projects-heading">Projects</h1>
     {%if object_list%}
-    <div class="container my-5 py-5">
+    <div class="container my-4 py-3">
     <div class="row row-cols-1 row-cols-3 g-4 justify-content-start">
         {%for project in object_list%}
         <div class="col">
