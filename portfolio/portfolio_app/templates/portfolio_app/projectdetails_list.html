@@ -2,11 +2,11 @@
 {% block content %}
 <div>
 <section class=" container-flex custom-bg my-5 py-5" id="about">
-<div class=" container" >
+<div class=" container col-7" >
 
     <h1 class="text-center text-success about-heading" >About</h1>
     <p class="lato-regular">
-      Hey there! I'm a recent MCA postgraduate  with a passion for building cool stuff with Python. While Python is my go-to language, I've dabbled in a few others along the way as i am always open to learning new things!
+      Hey there! I'm a MCA postgraduate with a passion for building cool stuff with Python. While Python is my go-to language, I've dabbled in a few others along the way as i am always open to learning new things!
       <br>
       I've spent time working on web apps, APIs, and interactive tools, mostly using Django and Django REST Framework. Whether it's setting up authentication, handling databases, or making things run smoothly behind the scenes, I love figuring out how everything connects.
       <br>
@@ -16,7 +16,7 @@
 </section>
 
 
-<section class="container-flex custom-bg2  py-5" >
+<section class="container-flex custom-bg2  py-5"  id="project">
     <h1 class="text-center text-danger projects-heading">Projects</h1>
     {%if object_list%}
     <div class="container my-4 py-3">

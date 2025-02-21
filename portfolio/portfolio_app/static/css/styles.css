@@ -187,3 +187,13 @@ h1.about-heading, h1.projects-heading {
     font-family: 'Roboto', sans-serif;
 	font-weight: 700;
 }
+.navbar-nav .nav-link {
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+    margin: 0; /* Ensure no extra margin */
+    position: relative; /* Ensure proper positioning */
+    z-index: 1; /* Ensure the link is on top */
+}
+
+.navbar {
+    z-index: 1000; /* Ensure the navbar is on top of other elements */
+}
