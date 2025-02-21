@@ -1,23 +1,42 @@
-<footer class="container-flex bg-dark text-white my-5 py-5">
+<footer class="container-fluid bg-dark py-5 ">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 d-flex flex-column justify-content-center">
-                <h5>Contact Me</h5>
-                <ul class="list-unstyled">
-                    <li>Email: <a href="mailto:your-email@example.com" class="text-white">your-email@example.com</a></li>
-                    <li>Phone: <a href="tel:+1234567890" class="text-white">+1 234 567 890</a></li>
+            <!-- Left Section -->
+            <div class="col-md-7">
+                <h6 class="text-uppercase text-muted">Get In Touch</h6>
+                <h2 class="fw-bold">
+                    Feel free to reach out if you wanna collaborate with me,
+                    or simply have a chat.
+                </h2>
+                <ul class="list-unstyled py-4">
+                <a id="email-link" class="btn btn-light me-2">Say Hello</a>
+                <a href="#" class="btn btn-outline-light">Get My CV</a>
                 </ul>
             </div>
-            <div class="col-md-6 d-flex flex-column align-items-end justify-content-center">
-                <h5>Follow Me</h5>
-                <ul class="list-unstyled">
-                    <li><a href="https://twitter.com/yourprofile" class="text-white">Twitter</a></li>
-                    <li><a href="https://linkedin.com/in/yourprofile" class="text-white">LinkedIn</a></li>
-                    <li><a href="https://github.com/yourprofile" class="text-white">GitHub</a></li>
-                </ul>
+
+            <!-- Right Section -->
+            <div class="col-md-5">
+                <h6 class="text-uppercase text-muted">Let's Work Together</h6>
+                <p class="mb-1"><span id="email-placeholder" class="text-white"></span></li>
+                
+
+                <h6 class="text-uppercase text-muted mt-4">Connect</h6>
+                <div>
+                    <ul class="list-unstyled"> 
+                    <a href="https://linkedin.com/in/pankaj-sharma-0505a4175" class="text-white me-3" target="_blank"><i class="fab fa-linkedin fa-2x" ></i></a>
+                    <a href="https://github.com/pksz" class="text-white me-3" target="_blank"><i class="fab fa-github fa-2x"></i></a>
+                    </ul>
+                </div>
             </div>
-        </div>
-        <div class="row mt-3">
         </div>
     </div>
 </footer>
+
+<script>
+    var user = "pan1403sharma"; 
+    var domain = "gmail.com"; 
+    var email = user + "@" + domain;
+    var emailLink = '<a href="mailto:' + email + '" class="text-white">' + email + '</a>';
+    document.getElementById('email-placeholder').innerHTML = emailLink;
+    document.getElementById('email-link').href = 'mailto:' + email;
+  </script>

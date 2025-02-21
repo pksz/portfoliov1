@@ -5,4 +5,4 @@ from .models import ProjectDetails
 # Create your views here.
 
 class HomePage(generic.ListView):
-    queryset=ProjectDetails.objects.all()
+    queryset=ProjectDetails.objects.all().order_by('priority')
