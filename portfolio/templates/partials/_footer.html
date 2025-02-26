@@ -1,3 +1,4 @@
+{%load static%}
 <footer class="container-fluid bg-dark py-5 " >
     <div class="container" id="contact">
         <div class="row">
@@ -10,7 +11,7 @@
                 </h2>
                 <ul class="list-unstyled py-4">
                 <a id="email-link" class="btn btn-light me-2">Say Hello</a>
-                <a href="#" class="btn btn-outline-light">Get My CV</a>
+                <a href="{% static 'cv/websiteresume.pdf' %}" class="btn btn-outline-light" download="">Get My CV</a>
                 </ul>
             </div>
 
